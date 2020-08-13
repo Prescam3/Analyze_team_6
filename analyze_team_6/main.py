@@ -121,13 +121,7 @@ def dictionary_of_metrics(items):
 # Function_2
 ### START FUNCTION
 def five_num_summary(items):
-    # your code here
-    """
-    The function takes a list as input.
-    The function return a dict with keys 'max', 'median', 'min', 'q1', and 'q3'
-    corresponding to the maximum, median, minimum, first quartile and third quartile,
-    respectively. All numerical values should be rounded to two decimal places.
-
+  """  
     df: The function takes a list as input
     
     body:
