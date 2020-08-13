@@ -137,7 +137,7 @@ def date_parser(dates):
     # your code here
     #This portion of the code slices the date to the required length.
     new_list = [magic[0:10] for magic in dates]
-    # We return the list with sliced dates.
+    # We return the list with the sliced dates.
     return(new_list)
 
 ### END FUNCTION
