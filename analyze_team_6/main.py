@@ -125,7 +125,7 @@ def five_num_summary(items):
         corresponding to the maximum, median, minimum, first quartile and third quartile, respectively. You may use numpy functions to aid in your calculations.
     
     return:
-        five number summary
+        five_number_summary
     """
     
     five_num_sum = np.percentile(items,[0, 25, 50, 75, 100])
