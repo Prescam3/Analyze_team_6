@@ -121,15 +121,7 @@ def dictionary_of_metrics(items):
 
 
 #Function_2
-
 """ df: The function takes a list as input
-=======
-# Function_2
-### START FUNCTION
-def five_num_summary(items):
-  """  
-    df: The function takes a list as input
- master
     
     body:
         The function return a dict with keys 'max', 
@@ -139,9 +131,7 @@ def five_num_summary(items):
         aid in your calculations.
     
     return:
-
         five_number_summary"""
-        
 def five_num_summary(items):
    
     five_num_sum = np.percentile(items,[0, 25, 50, 75, 100])
@@ -150,20 +140,9 @@ def five_num_summary(items):
                 'min': five_num_sum[0],'q1':five_num_sum[1],
                 'q3':five_num_sum[3]}
     return dict
-
-
-=======
-        five_number_summary
-    """
-    five_num_sum = np.percentile(items,[0, 25, 50, 75, 100])
-    dict = {'max': five_num_sum[4], 'Median':five_num_sum[2],
-            'Min': five_num_sum[0],'Q1':five_num_sum[1],
-            'Q3':five_num_sum[3]
-            }
-
-    return dict
-
 ### END FUNCTION
+
+
 
 # Function_3
 ### START FUNCTION
