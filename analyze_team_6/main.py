@@ -108,30 +108,29 @@ def dictionary_of_metrics(items):
 
 
 #Function_2
-### START FUNCTION
-def five_num_summary(items):
-    """
-    The function takes a list as input.
-    The function return a dict with keys 'max', 'median', 'min', 'q1', and 'q3'
-    corresponding to the maximum, median, minimum, first quartile and third quartile, respectively.
-    All numerical values should be rounded to two decimal places.
 
-    parameter: 
-        df: The function takes a list as input
+
+### START FUNCTION
+""" df: The function takes a list as input
     
     body:
-        
-         The function return a dict with keys 'max', 'median', 'min', 'q1', and 'q3'
-        corresponding to the maximum, median, minimum, first quartile and third quartile, respectively. You may use numpy functions to aid in your calculations.
+        The function return a dict with keys 'max', 
+        'median', 'min', 'q1', and 'q3'
+        corresponding to the maximum, median, minimum, first quartile 
+        and third quartile, respectively. You may use numpy functions to 
+        aid in your calculations.
     
     return:
-        five_number_summary
-    """
-    
+        five_number_summary"""
+def five_num_summary(items):
+   
     five_num_sum = np.percentile(items,[0, 25, 50, 75, 100])
-    dict = {'max': five_num_sum[4],'Median':five_num_sum[2],'Min':five_num_sum[0],'Q1':five_num_sum[1],'Q3':five_num_sum[3]}
     
+    dict = {'max': five_num_sum[4], 'median':five_num_sum[2],
+                'min': five_num_sum[0],'q1':five_num_sum[1],
+                'q3':five_num_sum[3]}
     return dict
+
 
 ### END FUNCTION
 
