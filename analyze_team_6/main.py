@@ -122,8 +122,6 @@ def dictionary_of_metrics(items):
 
 #Function_2
 
-
-### START FUNCTION
 """ df: The function takes a list as input
 =======
 # Function_2
@@ -143,6 +141,7 @@ def five_num_summary(items):
     return:
 
         five_number_summary"""
+        
 def five_num_summary(items):
    
     five_num_sum = np.percentile(items,[0, 25, 50, 75, 100])
